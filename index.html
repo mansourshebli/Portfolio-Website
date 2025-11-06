@@ -86,11 +86,17 @@
         </div>
         <div class="hero__visual" data-reveal>
           <div class="hero__portrait" data-tilt>
-            <img
-              src="assets/mansour_avatar.png"
-              alt="Portrait of Mansour Alshebli"
-              loading="lazy"
-            />
+            <picture>
+              <source srcset="assets/mansour_avatar.webp" type="image/webp" />
+              <source srcset="assets/mansour_avatar.png" type="image/png" />
+              <img
+                src="assets/mansour_avatar.png"
+                alt="Portrait of Mansour Alshebli"
+                loading="lazy"
+                width="827"
+                height="945"
+              />
+            </picture>
             <div class="hero__portrait-glow"></div>
           </div>
           <div class="hero__badge" data-floating data-float-intensity="26">
