@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mansour Alshebli • CS Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for Mansour Alshebli, a national award-winning CS student and AI product founder from the UAE."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="orb orb--one"></div>
+    <div class="orb orb--two"></div>
+
+    <header class="site-header" data-reveal>
+      <a class="site-logo" href="#home">
+        <span>{</span>Mansour<span>}</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#impact">Spotlight</a>
+        <a href="#github">GitHub</a>
+        <a href="#skills">Skills</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__content" data-reveal>
+          <p class="hero__eyebrow">
+            student founder • national cs champion • ai builder
+          </p>
+          <h1 class="hero__title">
+            Hi, I'm Mansour Alshebli.
+            <span data-highlight>I code, learn, and build stuff!</span>
+          </h1>
+          <p class="hero__subtitle">
+            First ranked Grade 12 student at Applied Technology School (UAE), two time national
+            hackathon winner, and founder of AI startups like Studify and Lomo AI.
+          </p>
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Track Record</span>
+              <p>7× podiums in UAE tech challenges</p>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Founder</span>
+              <p>Studify • Lomo AI</p>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Focus</span>
+              <p>Transparent ML + Quantum curiosity</p>
+            </div>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">Explore Projects</a>
+            <a
+              class="btn btn--ghost btn--outline"
+              href="https://github.com/mansourshebli"
+              target="_blank"
+              rel="noopener"
+              >GitHub Profile</a
+            >
+            <a class="btn btn--ghost" href="#contact">Collaborate</a>
+          </div>
+          <div class="hero__status">
+            <div class="status-dot"></div>
+            <span>Open to global tech fellowships and internships in 2025</span>
+          </div>
+        </div>
+        <div class="hero__visual" data-reveal>
+          <div class="hero__portrait" data-tilt>
+            <img
+              src="assets/mansour_avatar.png"
+              alt="Portrait of Mansour Alshebli"
+              loading="lazy"
+            />
+            <div class="hero__portrait-glow"></div>
+          </div>
+          <div class="hero__badge" data-floating data-float-intensity="26">
+            <p>Next experiment</p>
+            <span><span class="typing"></span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact" id="impact">
+        <div class="section-heading" data-reveal>
+          <p class="section-heading__eyebrow">Spotlight</p>
+          <h2 class="section-heading__title">
+            Peek into the workbench: shipped products, recognitions, and community energy.
+          </h2>
+        </div>
+        <div class="impact-window" data-tabs>
+          <div class="impact-window__chrome">
+            <div class="impact-window__controls">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="impact-window__tabs">
+              <button class="impact-window__tab is-active" type="button" data-tab-target="launchpad">
+                Launchpad
+              </button>
+              <button class="impact-window__tab" type="button" data-tab-target="awards">
+                Awards
+              </button>
+              <button class="impact-window__tab" type="button" data-tab-target="community">
+                Community
+              </button>
+            </div>
+          </div>
+          <div class="impact-window__panels">
+            <div class="impact-window__panel is-active" data-tab-panel="launchpad">
+              <article class="impact-card" data-reveal data-tilt>
+                <span class="impact-card__eyebrow">Studify</span>
+                <h3>The student productivity OS that's live on the App Store.</h3>
+                <p>
+                  Led UX, SwiftUI engineering, and launch operations. Supports focus rituals, smart
+                  scheduling, and analytics for 400+ students aiming for top universities.
+                </p>
+              </article>
+              <article class="impact-card" data-reveal data-tilt>
+                <span class="impact-card__eyebrow">Lomo AI</span>
+                <h3>AI admission mentor trusted by students in 20+ countries.</h3>
+                <p>
+                  Built a guidance co-pilot with essay insights, extracurricular planning, and
+                  personalized timelines—all powered by transparent ML workflows.
+                </p>
+              </article>
+              <article class="impact-card" data-reveal data-tilt>
+                <span class="impact-card__eyebrow">Biochar Bin</span>
+                <h3>IoT + ML solution that turns campus waste into climate action.</h3>
+                <p>
+                  Designed hardware, telemetry, and inference models so schools can monitor emissions
+                  and produce nutrient-rich biochar on-site.
+                </p>
+              </article>
+            </div>
+            <div class="impact-window__panel" data-tab-panel="awards">
+              <article class="impact-card" data-reveal data-tilt>
+                <span class="impact-card__eyebrow">TDRA AI Challenge — 1st Place</span>
+                <h3>Recognized nationally for an AI product with measurable impact.</h3>
+                <p>
+                  Presented to UAE tech leaders, blending research, execution, and storytelling to show
+                  how AI can uplift student communities.
+                </p>
+              </article>
+              <article class="impact-card" data-reveal data-tilt>
+                <span class="impact-card__eyebrow">ADNOC STEM Challenge — 2nd Place</span>
+                <h3>Designed sustainable energy tech for the classroom.</h3>
+                <p>
+                  Prototyped carbon capture dashboards and IoT devices, standing out among 750+ teams
+                  with a systems-first approach.
+                </p>
+              </article>
+              <article class="impact-card" data-reveal data-tilt>
+                <span class="impact-card__eyebrow">MBZUAI Winter School</span>
+                <h3>Earned runner-up with AI for smart campus operations.</h3>
+                <p>
+                  Collaborated with regional talent to prototype responsible AI solutions, presenting
+                  impact metrics to MBZUAI and ADEK mentors.
+                </p>
+              </article>
+            </div>
+            <div class="impact-window__panel" data-tab-panel="community">
+              <article class="impact-card" data-reveal data-tilt>
+                <span class="impact-card__eyebrow">UX Mentor — Sandooq Al Watan</span>
+                <h3>Guided 400+ students from wireframes to SwiftUI apps.</h3>
+                <p>
+                  Created hands-on workshops covering design thinking, prototyping, and app polish—helping
+                  teams ship their first experiences with confidence.
+                </p>
+              </article>
+              <article class="impact-card" data-reveal data-tilt>
+                <span class="impact-card__eyebrow">China Summer Program Scholar</span>
+                <h3>Mini-startup building with peers at Beijing Institute of Technology.</h3>
+                <p>
+                  Explored advanced ML, robotics, and cross-cultural collaboration while presenting
+                  student-built healthcare solutions to faculty.
+                </p>
+              </article>
+              <article class="impact-card" data-reveal data-tilt>
+                <span class="impact-card__eyebrow">Math Gifted &amp; Talented Leader</span>
+                <h3>Turned complex concepts into workshops and peer coaching.</h3>
+                <p>
+                  Facilitated circles on problem solving, geometry, and data storytelling, driving engagement
+                  for advanced learners across the UAE.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="section-heading" data-reveal>
+          <p class="section-heading__eyebrow">About</p>
+          <h2 class="section-heading__title">
+            Fueled by curiosity, competition, and building for students like me.
+          </h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__bio" data-reveal>
+            <p>
+              I'm Mansour, 1<sup>st</sup> ranked Grade 12 student at Applied Technology School,
+              Aqabiya Campus. I thrive in national competitions, hackathons, and open-source ML
+              projects—then translate the wins into products that help students plan, learn, and
+              thrive.
+            </p>
+            <p>
+              Recent adventures include prototyping climate-tech insights with Biochar Bin, exploring
+              quantum computing with Qiskit, and coaching peers through design labs at Sandooq Al
+              Watan. My goal? Spark a movement that reshapes how the UAE experiences AI, starting with
+              my own journey.
+            </p>
+            <div class="about__metrics">
+              <div>
+                <h3>7</h3>
+                <p>National podium finishes</p>
+              </div>
+              <div>
+                <h3>300+</h3>
+                <p>Students mentored &amp; supported</p>
+              </div>
+              <div>
+                <h3>20+</h3>
+                <p>Countries using my AI apps</p>
+              </div>
+            </div>
+          </div>
+          <div class="about__highlights" data-reveal>
+            <div class="highlight-card" data-tilt>
+              <p class="highlight-card__label">Latest Deep Dive</p>
+              <h3 class="highlight-card__title">
+                Building AI assistants that feel like mentors, not machines.
+              </h3>
+              <p class="highlight-card__body">
+                Leading Studify (student productivity OS) and Lomo AI (university application
+                assistant) from idea to launch—covering UX, backend, and growth. Both are born from
+                competition lessons and validated with real student feedback.
+              </p>
+              <span class="highlight-card__tag">Founder-led</span>
+            </div>
+            <div class="highlight-list">
+              <div class="chip">AI competitions</div>
+              <div class="chip">Product strategy</div>
+              <div class="chip">Transparent ML</div>
+              <div class="chip">Quantum computing</div>
+              <div class="chip">Community mentorship</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="section-heading" data-reveal>
+          <p class="section-heading__eyebrow">Projects</p>
+          <h2 class="section-heading__title">
+            Products that combine technical depth, empathy, and bold execution.
+          </h2>
+        </div>
+        <div class="project-switcher" data-project-switcher data-reveal>
+          <aside class="project-switcher__nav">
+            <button class="project-switcher__tab is-active" type="button" data-project-target="studify">
+              Studify
+            </button>
+            <button class="project-switcher__tab" type="button" data-project-target="lomo">
+              Lomo&nbsp;AI
+            </button>
+            <button class="project-switcher__tab" type="button" data-project-target="biochar">
+              Biochar&nbsp;Bin
+            </button>
+            <button class="project-switcher__tab" type="button" data-project-target="tripify">
+              Tripify
+            </button>
+          </aside>
+          <div class="project-switcher__viewport">
+            <article class="project-window is-active" data-project-panel="studify" data-tilt>
+              <header class="project-window__chrome">
+                <div class="project-window__controls">
+                  <span></span><span></span><span></span>
+                </div>
+                <p class="project-window__title">studify.app</p>
+                <span class="project-window__status">Live • App Store launch</span>
+              </header>
+              <div class="project-window__body">
+                <div class="project-window__summary">
+                  <h3>Studify — Student productivity OS</h3>
+                  <p>
+                    Designed, coded, and launched a SwiftUI app that keeps 400+ students on track with
+                    rituals, intelligent tasks, and progress analytics synced across devices.
+                  </p>
+                  <ul class="project-window__stack">
+                    <li>SwiftUI</li>
+                    <li>Firebase</li>
+                    <li>StoreKit</li>
+                  </ul>
+                  <div class="project-window__actions">
+                    <a class="btn btn--primary" href="#contact">Request Demo</a>
+                    <a class="btn btn--ghost" href="https://github.com/mansourshebli" target="_blank" rel="noopener"
+                      >Source snippets</a
+                    >
+                  </div>
+                </div>
+                <pre class="project-window__code"><code>schedule.run() {
+  focus.sessions()
+  planner.sync()
+  insights.share()
+}</code></pre>
+              </div>
+            </article>
+
+            <article class="project-window" data-project-panel="lomo" data-tilt>
+              <header class="project-window__chrome">
+                <div class="project-window__controls">
+                  <span></span><span></span><span></span>
+                </div>
+                <p class="project-window__title">lomo-ai.dev</p>
+                <span class="project-window__status">Beta • 20+ countries</span>
+              </header>
+              <div class="project-window__body">
+                <div class="project-window__summary">
+                  <h3>Lomo AI — Application mentor that actually listens</h3>
+                  <p>
+                    Built an AI co-pilot that parses goals, essays, and extracurriculars to craft
+                    personalized roadmaps for university applicants.
+                  </p>
+                  <ul class="project-window__stack">
+                    <li>Next.js</li>
+                    <li>OpenAI Functions</li>
+                    <li>Supabase</li>
+                  </ul>
+                  <div class="project-window__actions">
+                    <a class="btn btn--primary" href="#impact">See spotlight</a>
+                    <a class="btn btn--ghost" href="https://github.com/mansourshebli" target="_blank" rel="noopener"
+                      >GitHub profile</a
+                    >
+                  </div>
+                </div>
+                <pre class="project-window__code"><code>const advice = coach.compose({
+  essay: upload.draft(),
+  timeline: student.goals,
+  energy: "encouraging"
+});</code></pre>
+              </div>
+            </article>
+
+            <article class="project-window" data-project-panel="biochar" data-tilt>
+              <header class="project-window__chrome">
+                <div class="project-window__controls">
+                  <span></span><span></span><span></span>
+                </div>
+                <p class="project-window__title">biochar-lab.local</p>
+                <span class="project-window__status">Prototype • Sustainability</span>
+              </header>
+              <div class="project-window__body">
+                <div class="project-window__summary">
+                  <h3>Biochar Bin — IoT + ML for climate-positive campuses</h3>
+                  <p>
+                    Engineered edge models on Raspberry Pi hardware that recommend kiln settings and
+                    monitor carbon capture in real time.
+                  </p>
+                  <ul class="project-window__stack">
+                    <li>Raspberry&nbsp;Pi</li>
+                    <li>TensorFlow Lite</li>
+                    <li>LoRa telemetry</li>
+                  </ul>
+                  <div class="project-window__actions">
+                    <a class="btn btn--primary" href="#impact">Read impact</a>
+                    <a class="btn btn--ghost" href="https://github.com/mansourshebli" target="_blank" rel="noopener"
+                      >Hardware notes</a
+                    >
+                  </div>
+                </div>
+                <pre class="project-window__code"><code>sensor.sample()
+  .pipe(normalize)
+  .fanOut(predictYield)
+  .push(dashboard);</code></pre>
+              </div>
+            </article>
+
+            <article class="project-window" data-project-panel="tripify" data-tilt>
+              <header class="project-window__chrome">
+                <div class="project-window__controls">
+                  <span></span><span></span><span></span>
+                </div>
+                <p class="project-window__title">tripify.ai</p>
+                <span class="project-window__status">Hackathon winner</span>
+              </header>
+              <div class="project-window__body">
+                <div class="project-window__summary">
+                  <h3>Tripify — Tailored itineraries in seconds</h3>
+                  <p>
+                    A travel planner that taps OpenAI and real-time APIs to craft hyper-personalised
+                    adventures based on vibe, budget, and timeframes.
+                  </p>
+                  <ul class="project-window__stack">
+                    <li>FastAPI</li>
+                    <li>OpenAI API</li>
+                    <li>Mapbox</li>
+                  </ul>
+                  <div class="project-window__actions">
+                    <a class="btn btn--primary" href="#contact">Collaborate</a>
+                    <a class="btn btn--ghost" href="https://github.com/mansourshebli" target="_blank" rel="noopener"
+                      >Project repo</a
+                    >
+                  </div>
+                </div>
+                <pre class="project-window__code"><code>router.post("/trip", async ctx =&gt; {
+  const plan = await itinerary.generate(ctx.pref);
+  return plan.enrich(weather.lookup());
+});</code></pre>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="github" id="github">
+        <div class="section-heading" data-reveal>
+          <p class="section-heading__eyebrow">Open Source</p>
+          <h2 class="section-heading__title">
+            Shipping public experiments, learning in the open, and contributing back.
+          </h2>
+        </div>
+        <p class="github__intro" data-reveal>
+          I share prototypes, curriculum tools, and ML experiments on GitHub. Highlights below update
+          live—pulled directly from <strong>@mansourshebli</strong> so teammates always see what's fresh.
+        </p>
+        <div class="github-grid" data-username="mansourshebli" data-state="loading">
+          <article class="repo-card repo-card--skeleton" aria-hidden="true"></article>
+          <article class="repo-card repo-card--skeleton" aria-hidden="true"></article>
+          <article class="repo-card repo-card--skeleton" aria-hidden="true"></article>
+          <article class="repo-card repo-card--skeleton" aria-hidden="true"></article>
+        </div>
+        <div class="github__cta" data-reveal>
+          <a
+            class="btn btn--ghost btn--outline"
+            href="https://github.com/mansourshebli?tab=repositories"
+            target="_blank"
+            rel="noopener"
+            >View all repositories</a
+          >
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="section-heading" data-reveal>
+          <p class="section-heading__eyebrow">Skills &amp; Tools</p>
+          <h2 class="section-heading__title">Full-stack maker with breadth and depth.</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skills__column" data-reveal data-tilt>
+            <h3>Core Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>Swift</li>
+              <li>TypeScript &amp; JavaScript</li>
+              <li>C++ &amp; C</li>
+            </ul>
+          </div>
+          <div class="skills__column" data-reveal data-tilt>
+            <h3>Frameworks &amp; Libraries</h3>
+            <ul>
+              <li>SwiftUI</li>
+              <li>Next.js &amp; React</li>
+              <li>TensorFlow &amp; scikit-learn</li>
+              <li>FastAPI &amp; Firebase</li>
+            </ul>
+          </div>
+          <div class="skills__column" data-reveal data-tilt>
+            <h3>Design &amp; Workflow</h3>
+            <ul>
+              <li>Figma &amp; Design Systems</li>
+              <li>Notion &amp; Personal Knowledge bases</li>
+              <li>Qiskit &amp; Quantum circuits</li>
+              <li>GitHub Actions &amp; CI/CD</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skills__canvas" aria-hidden="true">
+          <div class="blob blob--one"></div>
+          <div class="blob blob--two"></div>
+          <div class="blob blob--three"></div>
+        </div>
+      </section>
+
+      <section class="timeline" id="timeline">
+        <div class="section-heading" data-reveal>
+          <p class="section-heading__eyebrow">Journey</p>
+          <h2 class="section-heading__title">
+            Milestones that shaped my mission to democratize AI in the UAE.
+          </h2>
+        </div>
+        <div class="timeline__items">
+          <div class="timeline__item" data-reveal>
+            <div class="timeline__date">2024 • Present</div>
+            <h3>Founder &amp; CEO — Studify</h3>
+            <p>
+              Leading end-to-end product development and launch of Studify, a student productivity app
+              on the App Store. Handling UX, engineering, analytics, and community onboarding.
+            </p>
+          </div>
+          <div class="timeline__item" data-reveal>
+            <div class="timeline__date">2023</div>
+            <h3>Microsoft Imagine Cup UAE — Finalist</h3>
+            <p>
+              Co-created a guidance assistant for students and pitched it to Microsoft mentors, blending
+              product thinking with measurable student outcomes.
+            </p>
+          </div>
+          <div class="timeline__item" data-reveal>
+            <div class="timeline__date">2022</div>
+            <h3>Swift Accelerator Scholar — Apple &amp; HCT</h3>
+            <p>
+              Selected for the prestigious Swift Accelerator Program, mastering SwiftUI, app shipping,
+              and deploying my first iOS app to the App Store—igniting my passion for product design.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="section-heading" data-reveal>
+          <p class="section-heading__eyebrow">Let's build together</p>
+          <h2 class="section-heading__title">
+            Tell me about your next big idea. I'll bring the energy.
+          </h2>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info" data-reveal>
+            <div class="contact__card" data-tilt>
+              <h3>Email</h3>
+              <a href="mailto:hello@mansourshebli.dev">hello@mansourshebli.dev</a>
+            </div>
+            <div class="contact__card" data-tilt>
+              <h3>Social</h3>
+              <a href="https://github.com/mansourshebli" target="_blank" rel="noopener">GitHub</a>
+              <a href="#">Instagram</a>
+            </div>
+            <div class="contact__card" data-tilt>
+              <h3>Now Playing</h3>
+              <p>Deep focus beats and Arabic instrumentals powering late-night builds.</p>
+            </div>
+          </div>
+          <form class="contact__form" data-reveal>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Ada Lovelace" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="ada@analytic.com" />
+            </div>
+            <div class="form-row">
+              <label for="message">Project details</label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="What are you building?"
+              ></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <span class="form-hint">I'll get back within 2 business days.</span>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-reveal>
+      <p>© <span id="year"></span> Mansour Alshebli. Crafted with <span>•</span> and bold ideas.</p>
+      <a href="#home" class="scroll-top">Back to top</a>
+    </footer>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-indicator__bar"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
